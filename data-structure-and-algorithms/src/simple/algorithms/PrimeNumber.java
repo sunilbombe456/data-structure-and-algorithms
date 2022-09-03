@@ -10,14 +10,14 @@ public class PrimeNumber {
 		System.out.println("Enter the Number:");
 		n = sc.nextInt();
 		flag = false;
-		int divider = n - 1;
-		while (divider > 1) {
+		int divider = 2;
+		while (divider < n) {
 			remainder = n % divider;
 			if (remainder == 0) {
 				flag = true;
 				break;
 			} else {
-				divider -= 1;
+				divider += 1;
 			}
 		}
 		if (flag) {
